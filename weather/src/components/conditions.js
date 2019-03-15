@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
 
 class conditions extends Component {
+    // displayCondition = () => {
+    //     if (this.props.condition === 'Rain') {
+    //         console.log('rain')
+    //     }
+    // }
+    componentDidMount() {
+        if (this.props.condition === 'Rain') {
+                    console.log('rain')
+                }
+    }
     render() {
         return (
             <div>
-                <p>display conditionals</p>
+                {this.props.condition}
             </div>
         );
     }

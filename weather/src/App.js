@@ -13,7 +13,8 @@ class App extends Component {
     name: '',
     temp: '',
     humidity: '',
-    description: ''
+    description: '',
+    condition: ''
   }
   getWeather = async (e) => {
   e.preventDefault()
@@ -24,7 +25,8 @@ class App extends Component {
           temp: response.data.main.temp,
           name: response.data.name,
           humidity: response.data.main.humidity,
-          description: response.data.weather[0].description
+          description: response.data.weather[0].description,
+          condition: response.data.weather[0].main
         })
       })
     }
@@ -33,13 +35,17 @@ class App extends Component {
       <div className="App">
         <div className='Menu'>
           <h1>React Weather Tracker!</h1>
+          <ul className='NavButtons'>
+            <li>Sign Up</li>
+            <li>Log In</li>
+          </ul>
         </div>
         <div className='Form'>
           <Form getWeather={this.getWeather}/>
         </div>
 
           <Weather weather={this.state}/>
-          <Conditions />
+          <Conditions condition={this.state.condition}/>
       </div>
     );
   }

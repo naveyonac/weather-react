@@ -1,68 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Weather Application
 
-## Available Scripts
+The goal of this application is to pull in the local weather for the user based on their zip code, then give them clothing reccommendations based in their input and the weather for that day. Ultimately the user could use the app to plan their packing based on the weather for wherever they are traveling to.
 
-In the project directory, you can run:
+## Technologies used
 
-### `npm start`
+This application was built using:
+JavaScript
+React
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### MVP
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The MVP for this application is I want the user to be able to enter in their zip code and have the API search for the location and bring back the name of the city, the current temp, the humidity, and a brief description of the weather.
 
-### `npm test`
+### Bronze
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+My Bronze goal for the app is to have the user be able to sign up and log in and be able to save specific zip codes for future references.
 
-### `npm run build`
+### Silver
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The silver goal is for the user to be able to save a collection of all of their clothes. Based on their clothing and the weather, the application will give clothing selections for the user.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Gold
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Going for gold, the user will be able to look out in advance and be able to plan what to bring on trips. There will be a date selector(the user might put in "april 20-22") and zip code input. The app will then see what the weather will be like for those dates in that location and based on that, will tell you what clothing you should bring.(If its supposed to rain it will mention an umbrella or rain jacket, if its warm will advise bringing shorts or maybe some swim trunks)
