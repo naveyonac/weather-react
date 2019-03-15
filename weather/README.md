@@ -23,3 +23,5 @@ The silver goal is for the user to be able to save a collection of all of their 
 ### Gold
 
 Going for gold, the user will be able to look out in advance and be able to plan what to bring on trips. There will be a date selector(the user might put in "april 20-22") and zip code input. The app will then see what the weather will be like for those dates in that location and based on that, will tell you what clothing you should bring.(If its supposed to rain it will mention an umbrella or rain jacket, if its warm will advise bringing shorts or maybe some swim trunks)
+
+Deployed Link: http://weather-planner.surge.sh/
