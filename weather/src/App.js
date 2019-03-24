@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Form from './components/Form'
+import Outer from './components/Outer'
 import Weather from './components/Weather'
 import Conditions from './components/conditions'
 import Axios from 'axios';
@@ -46,6 +47,7 @@ class App extends Component {
 
           <Weather weather={this.state}/>
           <Conditions condition={this.state.condition}/>
+          <Outer temp={this.state.temp}/>
       </div>
     );
   }

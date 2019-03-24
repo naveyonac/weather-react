@@ -7,9 +7,7 @@ class conditions extends Component {
     //     }
     // }
     componentDidMount() {
-        if (this.props.condition === 'Rain') {
-                    console.log('rain')
-                }
+        
     }
     render() {
         return (
