@@ -46,3 +46,7 @@
 .NavButtons {
   display: inline;
 }
+
+body {
+  background-color: cadetblue
+}
