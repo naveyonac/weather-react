@@ -17,10 +17,17 @@ class App extends Component {
     return (
       <div className="App">
         <div className='Menu'>
-          <h1>React Weather Tracker!</h1>
-          <p>Tops Collection</p>
-          <p>Bottoms Collection</p>
-          <a href='/weather'>Check Weather</a>
+          <a href='/' component={App}>
+            <h1>React Weather Tracker!</h1>
+          </a>
+            <div className='Nav'>
+              <p>
+                <a href='/index'>Clothing Wardrobe</a>
+              </p>
+              <p>
+                <a href='/weather'>Check Weather</a>
+              </p>
+            </div>
         </div>
         {/*
           
