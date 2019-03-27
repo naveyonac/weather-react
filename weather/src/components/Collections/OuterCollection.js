@@ -1,28 +1,37 @@
 import React, { Component } from 'react';
 import Axios from 'axios'
+import OuterForm from './../Forms/OuterForm'
 
 class OuterCollection extends Component {
     constructor() {
         super() 
         this.state = {
-            brand: '',
-            color: '',
-            condition: '',
-            purpose: '',
-            type: ''
+            outerClothes: [ ]
         }
     }
 
     componentDidMount() {
-        Axios.get("http://localhost:1000/clothing/")
+        Axios.get("http://localhost:1000/clothing/outer")
         .then((result) => {
             console.log(result)
+            this.setState = {
+                outerClothes: result.data
+            }
         })
     }
     render() {
+        // let outerList = this.state.outerClothes.map(clothe => {
+        //     return (
+        //         <div className='individualArticle'>
+        //             ${clothe.brand}
+        //         </div>
+        //     )
+        // })
         return (
             <div>
-                <p>Hello from outer collection</p>
+                <h3>Hello from the outer collection</h3>
+                {/* {outerList} */}
+                <OuterForm />
             </div>
         );
     }

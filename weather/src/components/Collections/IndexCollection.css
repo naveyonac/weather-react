@@ -1,0 +1,9 @@
+.FlexParent {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+ul {
+    list-style-type: none;
+  }
+

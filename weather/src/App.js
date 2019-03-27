@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import Form from './components/Forms/Form'
-import Outer from './components/Outer'
+// import Form from './components/Forms/Form'
+// import Outer from './components/Outer'
 import Weather from './components/Weather'
-import Conditions from './components/conditions'
-import { Route, BrowserRouter } from 'react-router-dom'
+// import Conditions from './components/conditions'
+import { Route, Link, BrowserRouter } from 'react-router-dom'
 import IndexCollection from './components/Collections/IndexCollection'
 // import ClothingForm from './components/ClothingForm'
 
@@ -16,35 +16,26 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className='Menu'>
-          <a href='/' component={App}>
-            <h1>React Weather Tracker!</h1>
-          </a>
-            <div className='Nav'>
-              <p>
-                <a href='/index'>Clothing Wardrobe</a>
-              </p>
-              <p>
-                <a href='/weather'>Check Weather</a>
-              </p>
-            </div>
-        </div>
-        {/*
-          
-          <Conditions condition={this.state.condition}/>
-          <div className='ClothingReccommendations'>
-          <Outer temp={this.state.temp}/>
-          <ClothingForm /> 
-        </div> */}
         <BrowserRouter>
-          <Route path="/weather"
-            component={Weather}
-          />
-        </BrowserRouter>
-        <BrowserRouter>
-          <Route path="/index"
-            component={IndexCollection}
-          />
+          <div className='Menu'>
+            <Link to='/' component={App}>
+              <h1>Weather Tracker</h1>
+            </Link>
+              <div className='Nav'>
+                <p>
+                  <Link to='/index'>Clothing Wardrobe</Link>
+                </p>
+                <p>
+                  <Link to='/weather'>Check Weather</Link>
+                </p>
+              </div>
+          </div>
+        <Route path="/index"
+        component={IndexCollection}
+        />
+        <Route path="/weather"
+        component={Weather}
+        />
         </BrowserRouter>
       </div>
     );
@@ -52,3 +43,11 @@ class App extends Component {
 }
 
 export default App;
+
+/*
+  
+  <Conditions condition={this.state.condition}/>
+  <div className='ClothingReccommendations'>
+  <Outer temp={this.state.temp}/>
+  <ClothingForm /> 
+</div> */

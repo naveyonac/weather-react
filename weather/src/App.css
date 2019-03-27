@@ -43,9 +43,9 @@
   padding: 10px;
 }
 
-/* .Nav {
-  display: inline;
-} */
+.Nav {
+  text-align: center;
+}
 
 body {
   background-color: cadetblue
