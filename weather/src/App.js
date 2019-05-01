@@ -18,7 +18,7 @@ class App extends Component {
       <div className="App">
         <BrowserRouter>
           <div className='Menu'>
-            <Link to='/' component={App}>
+            <Link to='/'>
               <h1>Weather Tracker</h1>
             </Link>
               <div className='Nav'>
