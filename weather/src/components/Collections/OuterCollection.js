@@ -16,16 +16,12 @@ class OuterCollection extends Component {
         .then((result) => {
             console.log(result.data)
             this.setState = {
-                outerClothes: [result.data]
+                outerClothes: result.data
             }
-            // this.setState = {
-            //     outerClothes: result.data
-            // }
-            console.log(this.state)
         })
     }
     showOuterClothes() {
-        console.log(this.state.outerClothes)
+        console.log(this.state)
     }
     render() {
         // let outerList = this.state.outerClothes.map(clothe => {
